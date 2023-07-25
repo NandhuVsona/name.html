@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #kavin,#manik,#pradeep,#manoj {
+      display: none;
+    }
+
+   
+    #kname,
+    #mname,#prname,#maname {
+      text-align: justify;
+      padding: 10px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 200px;
+      height: 300px;
+      border-radius: 20px;
+    }
+    #error{
+      display: none;
+       color: red;
+      margin-top: 20px;
+      padding: 10px 25px;
+      border-radius: 2px;
+    }
+    body{
+      font-size: 20px;
+    }
+    button{
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 90px;
+      background-color: aqua;
+      outline: none;
+      border-radius:5px;
+      margin-bottom: 20px;
+    }
+  
+
+    input {
+        border-radius: 6px 0px 6px 0px;
+        outline: none;
+        height: 50px;
+        width:300px;
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+   
+    
+  </style>
+</head>
+
+<body>
+  <center>
+    <form autocomplete="off" id="none">
+     <br><br><br><br><br>
+    <input type="text" name="" id="username" placeholder="Enter Your Name"><br><br>
+  </form>
+    <button type="submit" onclick="formats()">click</button>
+  
+    <div id="kavin">
+      <div id="kname">
+        <center> <img src="kan.jpg" alt=""></center>
+        <h1>Kavin</h1>
+        <p>The English meaning of the term Kavin accurately conveys the predicted impact on personality. 5 alphabets
+          make up the name. The lucky number for this name, according to numerology, is 3, and it has a beneficial
+          effect on personality development. Anyone living in the UK, US, Canada, India, or Saudi Arabia can easily
+          conduct an online search for information about this name. Learn more about this charming name, including its
+          precise meaning, origin, gender, and classification. The name Kavin is primarily used in Hindi-speaking
+          nations, but it is also used in a small number of other nations and languages of the world.</p>
+      </div>
+    </div>
+
+
+    <div id="manik">
+      <div id="mname">
+        <center> <img src="kan.jpg" alt=""></center>
+        <h1>Manickavel</h1>
+        <p>Manickavel name meaning is Warrior, Innovative, Handsome and Manickavel is a Boy name. The Numerology Number
+          for the name Manickavel is 1. Below, you will learn how to pronunce Manickavel and discover interesting
+          details such as name popularity, numerology reading and more specific to the name Manickavel.</p>
+      </div>
+    </div>
+
+    <div id="pradeep">
+      <div id="prname">
+        <center> <img src="kan.jpg" alt=""></center>
+        <h1>Pradeep</h1>
+        <p>Pradeep has the numerology 6. The gender of this name Pradeep is Boy. These people are very good at keeping a nice balance between everything. They do not really over do anything rather they know how do they need to keep limits in everything.</p>
+      </div>
+    </div>
+
+    <div id="manoj">
+      <div id="maname">
+        <center> <img src="kan.jpg" alt=""></center>
+        <h1>Manoj Babu</h1>
+        <p>The meaning of Manoj Babu is “Love; springing from the intellect”. Keep in mind that many names may have different meanings in other countries and languages, so be careful that the name that you choose doesnt mean something bad or unpleasant..</p>
+      </div>
+    </div>
+
+  </center>
+  <center><div id="error">Please Enter Correct Name</div></center>
+  <script type="text/javascript">
+    function formats() {
+      let uname = document.getElementById("username").value.toUpperCase();
+      let show = document.getElementById("js");
+
+      switch (uname) {
+        case "KAVIN":
+          document.getElementById("kavin").style.display = "block"
+
+          break
+        case "MANICKAVEL":
+          document.getElementById("manik").style.display = "block"
+          break
+
+        case "MANOJ BABU":
+          document.getElementById("manoj").style.display = "block"
+          break
+        case "PRADEEP":
+          document.getElementById("pradeep").style.display = "block"
+          break
+
+
+
+        default:
+          document.getElementById("error").style.display="block"
+      }
+    }
+  </script>
+</body>
+
+</html>
